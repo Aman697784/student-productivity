@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="25dp"
+    android:paddingBottom="10dp">
+
+    <!-- TITLE -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exam Planner 📝"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prepare early. Perform better. 🎯"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:alpha="0.7"
+        android:layout_marginTop="5dp" />
+
+    <!-- ADD EXAM -->
+
+    <Button
+        android:id="@+id/btnAddExam"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="+  Add New Exam"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp" />
+
+    <!-- UPCOMING INFO -->
+
+    <TextView
+        android:id="@+id/txtUpcomingExam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📌 Upcoming Exams"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- EMPTY -->
+
+    <TextView
+        android:id="@+id/txtEmptyExam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📚 No Exams Added\n\nAdd your upcoming exams and start preparing! 🎯"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:alpha="0.7"
+        android:padding="30dp"
+        android:visibility="gone" />
+
+    <!-- LIST -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/examRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="10dp" />
+
+</LinearLayout>

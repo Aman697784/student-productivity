@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- DAYS LEFT -->
+
+        <TextView
+            android:id="@+id/txtExamStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔴 5 DAYS LEFT"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- SUBJECT -->
+
+        <TextView
+            android:id="@+id/txtExamSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cryptography"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <!-- TITLE -->
+
+        <TextView
+            android:id="@+id/txtExamTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Internal Exam"
+            android:textSize="16sp"
+            android:alpha="0.8"
+            android:layout_marginTop="4dp" />
+
+        <!-- DATE -->
+
+        <TextView
+            android:id="@+id/txtExamDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📅 19 September 2026"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <!-- TIME -->
+
+        <TextView
+            android:id="@+id/txtExamTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⏰ 10:00 AM"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp" />
+
+        <!-- LOCATION -->
+
+        <TextView
+            android:id="@+id/txtExamLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📍 Room 204"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp" />
+
+        <!-- DELETE -->
+
+        <Button
+            android:id="@+id/btnDeleteExam"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="🗑 Delete"
+            android:textAllCaps="false"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

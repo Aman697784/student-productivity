@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Smart Study Planner</string>
+    <string name="btn_add_task">+  Add New Task</string>
+    <string name="btn_start_focus_mode">🧠  Start Focus Mode</string>
+</resources>

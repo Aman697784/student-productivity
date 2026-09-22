@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- STATUS -->
+
+        <TextView
+            android:id="@+id/txtScheduleStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPCOMING"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+
+        <!-- DAY -->
+
+        <TextView
+            android:id="@+id/txtScheduleDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📅 Monday"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <!-- SUBJECT -->
+
+        <TextView
+            android:id="@+id/txtScheduleSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operating Systems"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp" />
+
+        <!-- TOPIC -->
+
+        <TextView
+            android:id="@+id/txtScheduleTopic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📖 Process Management"
+            android:textSize="15sp"
+            android:alpha="0.7"
+            android:layout_marginTop="4dp" />
+
+        <!-- TIME -->
+
+        <TextView
+            android:id="@+id/txtScheduleTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⏰ 09:00 AM - 10:00 AM"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <!-- FOCUS BUTTON -->
+
+        <Button
+            android:id="@+id/btnStartFocus"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="🧠 Start Focus"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <!-- DELETE -->
+
+        <Button
+            android:id="@+id/btnDeleteSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="🗑 Delete"
+            android:textAllCaps="false"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

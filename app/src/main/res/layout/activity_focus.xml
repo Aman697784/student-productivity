@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="45dp"
+        android:paddingBottom="30dp">
+
+        <!-- Header -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Focus Mode 🧠"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Focus on your work. Avoid distractions. 🚀"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:alpha="0.7"
+            android:layout_marginTop="8dp" />
+
+        <!-- Current Mode -->
+
+        <TextView
+            android:id="@+id/txtMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FOCUS SESSION"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="55dp" />
+
+        <!-- Timer -->
+
+        <TextView
+            android:id="@+id/txtTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="25:00"
+            android:textSize="64sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="15dp" />
+
+        <!-- Task -->
+
+        <TextView
+            android:id="@+id/txtTaskName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready to focus?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="15dp" />
+
+        <!-- Start Button -->
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="▶  Start Focus"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginTop="35dp" />
+
+        <!-- Pause -->
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="⏸  Pause"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="12dp" />
+
+        <!-- Reset -->
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="↻  Reset"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="12dp" />
+
+        <!-- Session Info -->
+
+        <TextView
+            android:id="@+id/txtSessionInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Focus for 25 minutes • Then take a break ☕"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:alpha="0.7"
+            android:layout_marginTop="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>
